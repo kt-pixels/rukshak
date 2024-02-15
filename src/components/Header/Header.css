@@ -1,0 +1,46 @@
+.sign-up{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    /* margin-block-end: 30px; */
+    background-color: rgba(0, 0, 0, 0.517);
+    backdrop-filter: blur(20px);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.sign-up > img{
+    width: 180px;
+}
+
+.navlinks{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    justify-content: space-evenly;
+}
+
+.navlinks > a{
+    text-decoration: none;
+}
+
+.navlinks > a > li{
+    color: white;
+    cursor: pointer;
+}
+
+.buttons{
+    display: flex;
+    gap: 20px;
+}
+
+.buttons > a > button{
+    background-color: rgb(255, 234, 0);
+    border: 2px solid rgb(255, 221, 0);
+    outline: none;
+    padding: 10px;
+    color: black;
+    cursor: pointer;
+}

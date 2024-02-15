@@ -1,0 +1,77 @@
+.background{
+    background-image: url('/public/admission.png');
+    height: 600px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.background::before{
+    content: '';
+    height: 600px;
+    background-color: rgba(0, 0, 0, 0.543);
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.submition-form{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.form-heading{
+    text-align: center;
+    padding-block: 20px;
+    color: orange;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+.submition-form > form{
+    display: grid;
+    gap: 40px;
+    margin-inline: 40px;
+    justify-content: space-between;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.submition-form > form > .fields{
+    display: flex;
+    flex-direction: column;
+}
+
+form > .fields input{
+    border: 1px solid gray;
+    padding: 10px 5px;
+    width: 200px;
+    outline: none;
+}
+
+form > .fields input[type="date"]{
+    color: gray;
+}
+
+form > input[type="submit"]{
+    background-color: transparent;
+    border: 2px solid orange;
+    margin-block-start: 10px;
+    border-radius: 0;
+    cursor: pointer;
+    padding: 10px;
+    width: 80px;
+    margin-block-end: 30px;
+}
+
+form > .fields select{
+    border: 1px solid gray;
+    padding: 10px 5px;
+    width: 200px;
+    outline: none;
+}

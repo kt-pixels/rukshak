@@ -1,0 +1,44 @@
+.background{
+    background-image: url('/public/back/1.jpg');
+    height: 600px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.background::before{
+    content: '';
+    height: 600px;
+    background-color: rgba(0, 0, 0, 0.543);
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.background > h2{
+    color: white;
+    padding: 20px;
+    font-size: 40px;
+    backdrop-filter: blur(20px);
+    border: 2px solid yellow;
+    letter-spacing: 2px;
+}
+
+.main-content-container{
+    padding: 30px;
+}
+
+.content{
+    margin-block: 40px;
+}
+
+.content > h3{
+    color: orange;
+    font-size: 25px;
+    border-bottom: 1px solid rgb(215, 215, 215);
+}

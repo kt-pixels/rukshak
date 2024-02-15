@@ -1,0 +1,68 @@
+footer{
+    background-color: black;
+    padding: 30px;
+}
+
+.footer-details{
+    display: flex;
+    justify-content: space-around;
+}
+
+li{
+    list-style: none;
+}
+
+.social-links{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.whatsapp{
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+    padding: 6px;
+    font-size: 20px;
+}.insta{
+    background-color: rgb(211, 0, 176);
+    color: white;
+    border-radius: 10px;
+    padding: 6px;
+    font-size: 20px;
+}.twiter{
+    background-color: transparent;
+    color: rgb(0, 122, 245);
+    border-radius: 10px;
+    padding: 6px;
+    font-size: 20px;
+}.messenger{
+    background-color: rgb(0, 115, 197);
+    color: white;
+    border-radius: 10px;
+    padding: 6px;
+    font-size: 20px;
+}
+
+footer > p{
+    text-align: center;
+    color: white;
+    margin-block-start: 30px;
+    padding-block-start: 30px;
+    border-top: 2px solid yellow;
+}
+
+.contact > h3{
+    color: orange;
+    font-size: 24px;
+}
+
+.pages > h3{
+    color: orange;
+    font-size: 24px;
+}
+
+.social-links > h3{
+    color: orange;
+    font-size: 24px;
+}
