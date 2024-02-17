@@ -19,13 +19,13 @@ function Header() {
         <ul className={`navlinks`}>
         <Swiper
       spaceBetween={5}
-      slidesPerView={6}
+      slidesPerView={8}
       breakpoints={{
         260: {
           slidesPerView: 3,
         },
         320: {
-          slidesPerView: 4,
+          slidesPerView: 3,
         },
         600: {
           slidesPerView: 5,
@@ -62,7 +62,7 @@ function Header() {
       </SwiperSlide>
       <SwiperSlide>
         <NavLink to="/terms-and-conditions" className="ctg-btn">
-          <button>Terms And Conditions</button>
+          <button>T & C</button>
         </NavLink>
       </SwiperSlide>
     </Swiper>
