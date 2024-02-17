@@ -4,7 +4,7 @@ function Privacy_Policy() {
   return (
     <div className="donate-rakshak">
       <div className="background">
-        <h2>Rakshak Trust Privacy Policy</h2>
+        <h2 style={{marginInline: '10px'}}>Rakshak Trust Privacy Policy</h2>
       </div>
       <div className="main-content-container">
         <div className="content">

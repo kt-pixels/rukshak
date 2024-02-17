@@ -1,57 +1,117 @@
-.donate-rakshak .background{
-    background-image: url('/public/back/2.jpg');
-    height: 600px;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    justify-content: center;
-    align-items: center;
-    display: flex;
+.donate-rakshak .background {
+  background-image: url("/public/back/2.jpg");
+  height: 600px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
-.donate-rakshak .background::before{
-    content: '';
-    height: 600px;
-    background-color: rgba(0, 0, 0, 0.543);
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
+.donate-rakshak .background::before {
+  content: "";
+  height: 600px;
+  background-color: rgba(0, 0, 0, 0.543);
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
 }
 
-.donate-rakshak.background > h2{
-    color: white;
-    padding: 20px;
-    font-size: 40px;
-    backdrop-filter: blur(20px);
-    border: 2px solid yellow;
-    letter-spacing: 2px;
+.donate-rakshak .background > h2 {
+  color: white;
+  padding: 20px;
+  font-size: 40px;
+  backdrop-filter: blur(20px);
+  border: 2px solid yellow;
+  letter-spacing: 2px;
 }
 
-.donate-rakshak .main-content-container{
-    padding: 30px;
+.donate-rakshak .main-content-container {
+  padding: 30px;
 }
 
-.donate-rakshak .main-content-container .content{
-    margin-block: 40px;
+.donate-rakshak .main-content-container .content {
+  margin-block: 40px;
 }
 
-.donate-rakshak .main-content-container .content > h3{
-    color: orange;
-    font-size: 25px;
-    border-bottom: 1px solid rgb(215, 215, 215);
+.donate-rakshak .main-content-container .content > h3 {
+  color: orange;
+  font-size: 25px;
+  border-bottom: 1px solid rgb(215, 215, 215);
 }
 
-.donate-rakshak .main-content-container .content > p{
-    margin-top: 20px;
+.donate-rakshak .main-content-container .content > p {
+  margin-top: 20px;
 }
 
-.donate-rakshak .main-content-container .content > p > strong{
-    color: orangered;
+.donate-rakshak .main-content-container .content > p > strong {
+  color: orangered;
 }
 
-.donate-rakshak .main-content-container .content > h4{
-    margin-top: 20px;
-    color: orangered;
+.donate-rakshak .main-content-container .content > h4 {
+  margin-top: 20px;
+  color: orangered;
+}
+
+@media only screen and (max-width: 600px) {
+  .donate-rakshak .background::before {
+    height: 400px;
+  }
+
+  .donate-rakshak .background {
+    height: 400px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .donate-rakshak .background > h2 {
+    padding: 13px;
+    font-size: 35px;
+  }
+
+  .donate-rakshak .main-content-container .content > h3 {
+    font-size: 20px;
+  }
+
+  .donate-rakshak .main-content-container .content > p {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .donate-rakshak .background > h2 {
+    padding: 10px;
+    font-size: 30px;
+  }
+
+  .donate-rakshak .background {
+    height: 350px;
+  }
+
+  .donate-rakshak .background::before {
+    height: 350px;
+  }
+}
+
+@media only screen and (max-width: 372px) {
+  .donate-rakshak .background > h2 {
+    font-size: 26px;
+  }
+
+  .donate-rakshak .background {
+    height: 300px;
+  }
+
+  .donate-rakshak .background::before {
+    height: 300px;
+  }
+}
+
+@media only screen and (max-width: 328px) {
+  .donate-rakshak .background > h2 {
+    font-size: 20px;
+  }
 }

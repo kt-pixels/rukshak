@@ -56,4 +56,41 @@
     font-weight: 800;
     letter-spacing: 2px;
     font-size: 20px;
+    width: 100% !important;
+}
+
+@media only screen and (max-width: 640px){
+    .equal > .text{
+        text-align: justify;
+        font-size: 14px;
+        margin-block-start: 10px;
+    }
+}
+
+@media only screen and (max-width: 541px){
+    .equal > .text {
+        text-align: start;
+    }
+
+    .form > form {
+        padding: 12px 26px;
+    }
+}
+
+@media only screen and (max-width: 490px) {
+    .msg .heading {
+        font-size: 22px;
+    }
+
+    .equal > .text{
+        font-size: 12px;
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 426px) {
+    .join-us{
+        flex-direction: column;
+        gap: 20px;
+    }
 }

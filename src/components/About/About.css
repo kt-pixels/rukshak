@@ -1,44 +1,104 @@
-.background{
-    background-image: url('/public/back/1.jpg');
-    height: 600px;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    justify-content: center;
-    align-items: center;
-    display: flex;
+.about-rakshak .background {
+  background-image: url("/public/back/1.jpg");
+  height: 600px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
-.background::before{
-    content: '';
-    height: 600px;
-    background-color: rgba(0, 0, 0, 0.543);
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
+.about-rakshak .background::before {
+  content: "";
+  height: 600px;
+  background-color: rgba(0, 0, 0, 0.543);
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
 }
 
-.background > h2{
-    color: white;
-    padding: 20px;
-    font-size: 40px;
-    backdrop-filter: blur(20px);
-    border: 2px solid yellow;
-    letter-spacing: 2px;
+.about-rakshak .background > h2 {
+  color: white;
+  padding: 20px;
+  font-size: 40px;
+  backdrop-filter: blur(20px);
+  border: 2px solid yellow;
+  letter-spacing: 2px;
 }
 
-.main-content-container{
-    padding: 30px;
+.main-content-container {
+  padding: 30px;
 }
 
-.content{
-    margin-block: 40px;
+.content {
+  margin-block: 40px;
 }
 
-.content > h3{
-    color: orange;
-    font-size: 25px;
-    border-bottom: 1px solid rgb(215, 215, 215);
+.content > h3 {
+  color: orange;
+  font-size: 25px;
+  border-bottom: 1px solid rgb(215, 215, 215);
+}
+
+@media only screen and (max-width: 600px) {
+  .about-rakshak .background::before {
+    height: 400px;
+  }
+
+  .about-rakshak .background {
+    height: 400px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .about-rakshak .background > h2 {
+    padding: 13px;
+    font-size: 35px;
+  }
+
+  .content > h3 {
+    font-size: 20px;
+  }
+
+  .content > p{
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 430px){
+    .about-rakshak .background > h2 {
+        padding: 10px;
+        font-size: 30px;
+    }
+
+    .about-rakshak .background {
+        height: 350px;
+    }
+
+    .about-rakshak .background::before {
+        height: 350px;
+    }
+}
+
+@media only screen and (max-width: 372px){
+    .about-rakshak .background > h2 {
+        font-size: 26px;
+    }
+
+    .about-rakshak .background {
+        height: 300px;
+    }
+
+    .about-rakshak .background::before {
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width: 328px){
+    .about-rakshak .background > h2 {
+        font-size: 20px;
+    }
 }

@@ -3,12 +3,28 @@ import "./Header.css";
 import { Link, NavLink } from "react-router-dom";
 
 function Header() {
+
+  const [displayNone, setDisplayNone] = useState("display-none")
+
+  const none = () => {
+    if(displayNone === ""){
+      setDisplayNone('display-none')
+    }
+  }
+
+  const flex = () => {
+    if(displayNone === "display-none"){
+      setDisplayNone("")
+    }
+  }
+
   return (
     <nav className="navbar-container">
       <div className="navbar">
         <div className="sign-up">
           <img src="itute.png" alt="Rakshak Trust Logo" />
-          <ul className="navlinks">
+          <ul className={`navlinks ${displayNone}`}>
+            <div className="close" onClick={none}>X</div>
             <Link to="">
               <li>Home</li>
             </Link>
@@ -33,6 +49,18 @@ function Header() {
             <Link to='/terms-and-conditions'>
               <li>Terms And Conditions</li>
             </Link>
+            <div className="buttons-for-signup">
+            <NavLink to="/sign-up">
+              <button className="btn" aria-label="sign up">
+                Sign Up
+              </button>
+            </NavLink>
+            <NavLink to="login">
+              <button className="btn" aria-label="login">
+                Login
+              </button>
+            </NavLink>
+            </div>
             {/* <Link>
               <li>Valunteer</li>
             </Link> */}
@@ -55,6 +83,11 @@ function Header() {
                 Login
               </button>
             </NavLink>
+            <div className="hambar" onClick={flex}>
+              <div className="bar"></div>
+              <div className="bar"></div>
+              <div className="bar"></div>
+            </div>
           </div>
         </div>
 

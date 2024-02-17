@@ -1,4 +1,4 @@
-.background{
+.admission-form .background{
     background-image: url('/public/admission.png');
     height: 600px;
     background-position: center center;
@@ -9,7 +9,7 @@
     display: flex;
 }
 
-.background::before{
+.admission-form .background::before{
     content: '';
     height: 600px;
     background-color: rgba(0, 0, 0, 0.543);
@@ -41,6 +41,15 @@
     justify-content: space-between;
     grid-template-columns: repeat(4, 1fr);
 }
+
+.admission-form .background > h2 {
+    color: white;
+    padding: 20px;
+    font-size: 40px;
+    backdrop-filter: blur(20px);
+    border: 2px solid yellow;
+    letter-spacing: 2px;
+  }
 
 .submition-form > form > .fields{
     display: flex;
@@ -74,4 +83,105 @@ form > .fields select{
     padding: 10px 5px;
     width: 200px;
     outline: none;
+}
+
+@media only screen and (max-width: 936px){
+    .submition-form > form{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (max-width: 700px){
+    .submition-form > form{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 626px) {
+    .admission-form .background::before {
+      height: 400px;
+    }
+  
+    .admission-form .background {
+      height: 400px;
+    }
+
+    .admission-form .background > h2 {
+        padding: 16px;
+        font-size: 35px;
+      }
+  }
+  
+  @media only screen and (max-width: 553px) {
+    .admission-form .background > h2 {
+      padding: 13px;
+      font-size: 32px;
+    }
+  }
+  
+  @media only screen and (max-width: 505px){
+      .admission-form .background > h2 {
+          padding: 10px;
+          font-size: 30px;
+      }
+  
+      .admission-form .background {
+          height: 350px;
+      }
+  
+      .admission-form .background::before {
+          height: 350px;
+      }
+  }
+  
+  @media only screen and (max-width: 473px){
+      .admission-form .background > h2 {
+          font-size: 26px;
+      }
+  
+      .admission-form .background {
+          height: 300px;
+      }
+  
+      .admission-form .background::before {
+          height: 300px;
+      }
+
+      .submition-form > form{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .submition-form > form > .fields > input{
+        width: 100%;
+    }
+
+    form > .fields select{
+        width: 100%;
+    }
+  }
+  
+  @media only screen and (max-width: 419px){
+      .admission-form .background > h2 {
+          font-size: 20px;
+      }
+      
+  }
+
+  @media only screen and (max-width: 351px){
+    .admission-form .background > h2 {
+        font-size: 17px;
+    }
+
+    .form-heading{
+        font-size: 22px;
+    }
+    
+}
+
+@media only screen and (max-width: 303px){
+    .admission-form .background > h2 {
+        font-size: 15px;
+    }
 }

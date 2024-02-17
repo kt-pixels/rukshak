@@ -55,3 +55,19 @@
 .Testimonials-container > .text > .feedback{
     color: white;
 }
+
+@media only screen and (max-width: 899px) {
+    .Testimonials-container > .image {
+        width: 100px;
+    }
+}
+
+@media only screen and (max-width: 640px){
+    .Testimonials-container > .image {
+        width: 70px;
+    }
+
+    .Testimonials-container > .text > .feedback{
+        font-size: 14px;
+    }
+}

@@ -25,6 +25,10 @@
     padding: 20px;
 }
 
+.swiper-wrapper{
+    gap: 30px;
+}
+
 .card{
     background-color: whitesmoke;
     border-radius: 10px;
@@ -59,3 +63,49 @@
 .card .view > span {
     color: orangered;
 }
+
+@media only screen and (max-width: 899px){
+    .welcome > h2 {
+        font-size: 32px;
+    }
+}
+
+@media only screen and (max-width: 640px){
+    .welcome > h2 {
+        font-size: 30px;
+    }
+
+    .welcome > p{
+        font-size: 14px;
+    }
+
+}
+
+@media only screen and (max-width: 580px){
+    .welcome > h2 {
+        font-size: 26px;
+    }
+}
+
+@media only screen and (max-width: 490px){
+    .welcome > h2 {
+        font-size: 22px;
+    }
+}
+
+@media only screen and (max-width: 426px){
+    .welcome {
+        gap: 15px;
+    }
+
+    .welcome > h2 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .welcome > p {
+        font-size: 12px;
+    }
+}
+
+/* @media only screen and (max-width: 371px) */

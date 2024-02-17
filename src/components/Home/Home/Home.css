@@ -1,65 +1,208 @@
-.background-image{
-    height: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url('/public/back/4.jpg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.background-image {
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/public/back/4.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.background-image::before{
-    content: '';
-    background-color: rgba(0, 0, 0, 0.636);
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 600px;
+.background-image::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.636);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 600px;
 }
 
-.text{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    z-index: 99;
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  z-index: 99;
 }
 
-.text .heading > h2{
-    color: white;
-    font-size: 40px;
-    text-transform: uppercase;
+.text .heading > h2 {
+  color: white;
+  font-size: 40px;
+  text-transform: uppercase;
+  padding: 10px;
+  margin: 10px;
+  border: 5px solid yellow;
+  backdrop-filter: blur(4px);
+}
+
+.text .heading > h2 > p {
+  color: orange;
+}
+
+.text .btn > button:nth-child(2) {
+  padding: 10px 20px;
+  border: 2px solid yellow;
+  color: black;
+  font-size: 20px;
+  text-transform: uppercase;
+  background-color: yellow;
+  cursor: pointer;
+  border-left: none;
+}
+.text .btn > button:nth-child(1) {
+  padding: 10px 20px;
+  border: 2px solid yellow;
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  background-color: transparent;
+  backdrop-filter: blur(5px);
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 899px) {
+  .text .heading > h2 {
+    font-size: 32px;
+  }
+
+  .background-image {
+    height: 500px;
+  }
+
+  .background-image::before {
+    height: 500px;
+  }
+}
+
+@media only screen and (max-width: 777px) {
+  .text .heading > h2 {
+    font-size: 30px;
+  }
+
+  .background-image {
+    height: 450px;
+  }
+
+  .background-image::before {
+    height: 450px;
+  }
+}
+
+@media only screen and (max-width: 728px) {
+  .text .heading > h2 {
+    font-size: 26px;
+  }
+
+  .text .btn > button:nth-child(1) {
+    font-size: 16px;
+  }
+
+  .text .btn > button:nth-child(2) {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .text {
+    flex-direction: row;
     padding: 10px;
-    margin: 10px;
-    border: 5px solid yellow;
-    backdrop-filter: blur(4px);
+  }
+
+  .text .btn > button:nth-child(1) {
+    font-size: 14px;
+    margin-block-end: 10px;
+  }
+
+  .text .btn > button:nth-child(2) {
+    font-size: 14px;
+    margin-block-start: 10px;
+  }
+
+  .text .heading > h2 {
+    font-size: 24px;
+  }
 }
 
-.text .heading > h2 > p{
-    color: orange;
+@media only screen and (max-width: 608px) {
+  .text .heading > h2 {
+    font-size: 22px;
+  }
 }
 
-.text .btn > button:nth-child(2){
-    padding: 10px 20px;
-    border: 2px solid yellow;
-    color: black;
+@media only screen and (max-width: 580px) {
+  .text .heading > h2 {
     font-size: 20px;
-    text-transform: uppercase;
-    background-color: yellow;
-    cursor: pointer;
-    border-left: none;
+  }
+
+  .text .btn > button:nth-child(1) {
+    padding: 7px 12px;
+  }
+
+  .text .btn > button:nth-child(2) {
+    padding: 7px 12px;
+  }
+
+  .background-image {
+    height: 360px;
+  }
+
+  .background-image::before {
+    height: 360px;
+  }
+
+  .welcome > h2 {
+    font-size: 26px;
+  }
 }
-.text .btn > button:nth-child(1){
-    padding: 10px 20px;
-    border: 2px solid yellow;
-    color: white;
-    font-size: 20px;
-    text-transform: uppercase;
-    background-color: transparent;
-    backdrop-filter: blur(5px);
-    cursor: pointer;
+
+@media only screen and (max-width: 541px) {
+  .text .btn > button:nth-child(1) {
+    font-size: 12px;
+  }
+  .text .btn > button:nth-child(2) {
+    font-size: 12px;
+  }
+
+  .text .heading > h2 {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 490px) {
+  .text .btn > button:nth-child(1) {
+    text-align: start;
+  }
+
+  .background-image {
+    height: 320px;
+    align-items: flex-end;
+}
+
+.background-image::before {
+    height: 320px;
+}
+}
+
+@media only screen and (max-width: 324px) {
+  .text .heading > h2 {
+    font-size: 14px;
+  }
+
+  .background-image {
+    height: 290px;
+}
+
+.background-image::before {
+  height: 290px;
+}
+}
+
+@media only screen and (max-width: 296px){
+.text{
+  gap: 0;
+}
 }

@@ -16,7 +16,7 @@ function Join() {
                     <input type="text" placeholder='Your Name...' />
                     <input type="email" placeholder='Your Email...' />
                     <input type="tel" placeholder='Number...' />
-                    <input type="submit" className='submit' />
+                    <input type="submit" className='submit' id="cont-sub" />
                 </form>
             </div>
         </div>
