@@ -8,6 +8,7 @@ import Login from "./Login/Login";
 import Donate from "./Donate/Donate";
 import Privacy_Policy from "./PrivacyPolicy/Privacy-Policy";
 import Terms from "./Terms/Terms";
+import Events from "./Events/Events";
 
 export {
     Header,
@@ -20,4 +21,5 @@ export {
     Donate,
     Privacy_Policy,
     Terms,
+    Events,
 }

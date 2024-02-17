@@ -12,15 +12,38 @@
 }
 
 .sign-up > img {
-  width: 180px;
+  width: 110px;
+}
+
+.sign-up > h2{
+  color: white;
+  text-transform: uppercase;
+  font-size: 40px;
 }
 
 .navlinks {
   display: flex;
   list-style: none;
-  gap: 30px;
-  justify-content: space-evenly;
   transition: all 0.3s ease-in-out;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  top: 87px;
+  z-index: 2000;
+  background-color: rgb(0 0 0 / 31%);
+  backdrop-filter: blur(20px);
+  padding-block: 15px;
+  text-align: center;
+
+}
+
+.ctg-btn > button {
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 10px;
+  color: white;
+  border: none;
 }
 
 .navlinks > a {
@@ -54,42 +77,45 @@
   display: none;
 }
 
-.buttons-for-signup {
-  display: none;
-}
-
 @media only screen and (max-width: 1000px) {
+  .sign-up {
+    gap: 10px;
+  }
   .navlinks {
-    flex-direction: column;
-    position: absolute;
-    top: 0;
-    right: 0;
     align-items: center;
-    padding: 30px;
-    background-color: #121212;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 100%;
+    align-items: center;
   }
 
-  .navlinks > .close {
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 10px 16px;
+  .sign-up > h2 {
+    display: flex;
     color: white;
-    background-color: orangered;
-    border-bottom-right-radius: 20px;
-    cursor: pointer;
-    display: block;
+    font-size: 40px;
+    text-transform: uppercase;
   }
+
+  .navlinks > a > li {
+    font-size: 14px;
+  }
+
+  /* .sign-up > .logoOrButtons{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  } */
 
   .display-none {
     display: none;
   }
 
+  .buttons > a > button {
+    display: none;
+  }
+
   .hambar {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    justify-content: center;
+    display: none;
   }
 
   .hambar > .bar {
@@ -101,11 +127,14 @@
 
 @media only screen and (max-width: 777px) {
   .sign-up > img {
-    width: 140px;
+    width: 100px;
   }
 
   .buttons > a > button {
     padding: 6px;
+  }
+  .navlinks{
+    top: 82px;
   }
 }
 
@@ -115,12 +144,17 @@
   }
 
   .sign-up > img {
-    width: 100px;
+    width: 90px;
+    border: 3px solid yellow;
+    border-radius: 50%;
   }
 
-  .buttons-for-signup {
+  .navlinks{
+    top: 75px;
+  }
+
+  /* .buttons-for-signup {
     display: flex;
-    flex-direction: column;
     gap: 20px;
     justify-content: center;
     align-items: center;
@@ -133,5 +167,5 @@
     padding: 5px;
     color: black;
     cursor: pointer;
-  }
+  } */
 }

@@ -31,7 +31,7 @@
 
 .text .heading > h2 {
   color: white;
-  font-size: 40px;
+  font-size: 38px;
   text-transform: uppercase;
   padding: 10px;
   margin: 10px;
@@ -69,13 +69,13 @@
     font-size: 32px;
   }
 
-  .background-image {
+  /* .background-image {
     height: 500px;
   }
 
   .background-image::before {
     height: 500px;
-  }
+  } */
 }
 
 @media only screen and (max-width: 777px) {
@@ -84,11 +84,11 @@
   }
 
   .background-image {
-    height: 450px;
+    height: 550px;
   }
 
   .background-image::before {
-    height: 450px;
+    height: 550px;
   }
 }
 
@@ -146,13 +146,14 @@
     padding: 7px 12px;
   }
 
-  .background-image {
-    height: 360px;
+  .background-image::before {
+    height: 400px;
   }
 
-  .background-image::before {
-    height: 360px;
-  }
+  .background-image {
+    height: 400px;
+    align-items: flex-end;
+}
 
   .welcome > h2 {
     font-size: 26px;
@@ -178,12 +179,27 @@
   }
 
   .background-image {
-    height: 320px;
+    height: 380px;
     align-items: flex-end;
 }
 
 .background-image::before {
-    height: 320px;
+    height: 380px;
+}
+}
+
+@media only screen and (max-width: 355px){
+  .background-image {
+    height: 380px;
+    align-items: flex-end;
+}
+
+.background-image::before {
+    height: 380px;
+}
+
+.text .heading > h2 {
+  font-size: 16px;
 }
 }
 
@@ -193,11 +209,11 @@
   }
 
   .background-image {
-    height: 290px;
+    height: 360px;
 }
 
 .background-image::before {
-  height: 290px;
+  height: 360px;
 }
 }
 

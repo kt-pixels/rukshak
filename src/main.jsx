@@ -12,6 +12,7 @@ import {
   About,
   Admission,
   Donate,
+  Events,
   Home,
   Login,
   Privacy_Policy,
@@ -30,6 +31,7 @@ const router = createBrowserRouter(
         <Route path="/donate" element={<Donate />} />
         <Route path="/privacy-policy" element={<Privacy_Policy />} />
         <Route path="/terms-and-conditions" element={<Terms />} />
+        <Route path="/ruakshak-trust-events" element={<Events />} />
         <Route path="/sign-up" element={<Signup />} />
         <Route path="/login" element={<Login />} />
       </Route>

@@ -1,7 +1,7 @@
 .about-rakshak .background {
   background-image: url("/public/back/1.jpg");
   height: 600px;
-  background-position: center center;
+  background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
   justify-content: center;
@@ -50,6 +50,8 @@
 
   .about-rakshak .background {
     height: 400px;
+    align-items: flex-end;
+    padding-block-end: 40px;
   }
 }
 

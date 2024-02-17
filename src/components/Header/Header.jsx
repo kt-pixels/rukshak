@@ -1,107 +1,72 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./Header.css";
 import { Link, NavLink } from "react-router-dom";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/swiper-bundle.css";
+
+// Import Swiper styles
+
+// Install Swiper modules
 
 function Header() {
-
-  const [displayNone, setDisplayNone] = useState("display-none")
-
-  const none = () => {
-    if(displayNone === ""){
-      setDisplayNone('display-none')
-    }
-  }
-
-  const flex = () => {
-    if(displayNone === "display-none"){
-      setDisplayNone("")
-    }
-  }
-
   return (
     <nav className="navbar-container">
       <div className="navbar">
         <div className="sign-up">
-          <img src="itute.png" alt="Rakshak Trust Logo" />
-          <ul className={`navlinks ${displayNone}`}>
-            <div className="close" onClick={none}>X</div>
-            <Link to="" onClick={none}>
-              <li>Home</li>
-            </Link>
-            <Link to='/about-us' onClick={none}>
-              <li>About Us</li>
-            </Link>
-            {/* <Link>
-              <li>Events</li>
-            </Link> */}
-            {/* <Link>
-              <li>Administration</li>
-            </Link> */}
-            <Link to='donate' onClick={none}>
-              <li>Donate</li>
-            </Link>
-            <Link to='/admission' onClick={none}>
-              <li>Admission</li>
-            </Link>
-            <Link to='/privacy-policy' onClick={none}>
-              <li>Privacy Policy</li>
-            </Link>
-            <Link to='/terms-and-conditions' onClick={none}>
-              <li>Terms And Conditions</li>
-            </Link>
-            <div className="buttons-for-signup">
-            <NavLink to="/sign-up">
-              <button className="btn" aria-label="sign up" onClick={none}>
-                Sign Up
-              </button>
-            </NavLink>
-            <NavLink to="login">
-              <button className="btn" aria-label="login" onClick={none}>
-                Login
-              </button>
-            </NavLink>
-            </div>
-            {/* <Link>
-              <li>Valunteer</li>
-            </Link> */}
-            {/* <Link>
-              <li>Legal Support</li>
-            </Link> */}
-            
-            {/* <Link>
-              <li>Contact Us</li>
-            </Link> */}
-          </ul>
-          <div className="buttons">
-            <NavLink to="/sign-up">
-              <button className="btn" aria-label="sign up">
-                Sign Up
-              </button>
-            </NavLink>
-            <NavLink to="login">
-              <button className="btn" aria-label="login">
-                Login
-              </button>
-            </NavLink>
-            <div className="hambar" onClick={flex}>
-              <div className="bar"></div>
-              <div className="bar"></div>
-              <div className="bar"></div>
-            </div>
-          </div>
+          <img src="NGO Logo.png" alt="Rakshak Trust Logo" />
+          <h2>Rakshak</h2>
         </div>
-
-        {/* <ul className="navlinks">
-          <li>Home</li>
-          <li>About Us</li>
-          <li>Events</li>
-          <li>Administration</li>
-          <li>Admission</li>
-          <li>Valunteer</li>
-          <li>Legal Support</li>
-          <li>Donet</li>
-          <li>Contact Us</li>
-        </ul> */}
+        <ul className={`navlinks`}>
+        <Swiper
+      spaceBetween={5}
+      slidesPerView={6}
+      breakpoints={{
+        260: {
+          slidesPerView: 3,
+        },
+        320: {
+          slidesPerView: 4,
+        },
+        600: {
+          slidesPerView: 5,
+        },
+        1100: {
+          slidesPerView: 6,
+        }
+      }}
+    >
+      <SwiperSlide>
+        <NavLink to="" className="ctg-btn">
+          <button>Home</button>
+        </NavLink>
+      </SwiperSlide>
+      <SwiperSlide>
+        <NavLink to="/about-us" className="ctg-btn">
+          <button>About Us</button>
+        </NavLink>
+      </SwiperSlide>
+      <SwiperSlide>
+        <NavLink to="/donate" className="ctg-btn">
+          <button>Donate</button>
+        </NavLink>
+      </SwiperSlide>
+      <SwiperSlide>
+        <NavLink to="/admission" className="ctg-btn">
+          <button>Admission</button>
+        </NavLink>
+      </SwiperSlide>
+      <SwiperSlide>
+        <NavLink to="/privacy-policy" className="ctg-btn">
+          <button>Privacy Policy</button>
+        </NavLink>
+      </SwiperSlide>
+      <SwiperSlide>
+        <NavLink to="/terms-and-conditions" className="ctg-btn">
+          <button>Terms And Conditions</button>
+        </NavLink>
+      </SwiperSlide>
+    </Swiper>
+        </ul>
       </div>
     </nav>
   );
