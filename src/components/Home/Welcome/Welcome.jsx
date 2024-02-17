@@ -1,14 +1,6 @@
 import React from "react";
 import "./Welcome.css";
-import { Pagination, Autoplay } from "swiper/modules";
 
-import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import "swiper/css/autoplay";
 
 function Welcome() {
   return (

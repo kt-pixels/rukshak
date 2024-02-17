@@ -25,10 +25,10 @@ function Header() {
           <img src="itute.png" alt="Rakshak Trust Logo" />
           <ul className={`navlinks ${displayNone}`}>
             <div className="close" onClick={none}>X</div>
-            <Link to="">
+            <Link to="" onClick={none}>
               <li>Home</li>
             </Link>
-            <Link to='/about-us'>
+            <Link to='/about-us' onClick={none}>
               <li>About Us</li>
             </Link>
             {/* <Link>
@@ -37,26 +37,26 @@ function Header() {
             {/* <Link>
               <li>Administration</li>
             </Link> */}
-            <Link to='donate'>
+            <Link to='donate' onClick={none}>
               <li>Donate</li>
             </Link>
-            <Link to='/admission'>
+            <Link to='/admission' onClick={none}>
               <li>Admission</li>
             </Link>
-            <Link to='/privacy-policy'>
+            <Link to='/privacy-policy' onClick={none}>
               <li>Privacy Policy</li>
             </Link>
-            <Link to='/terms-and-conditions'>
+            <Link to='/terms-and-conditions' onClick={none}>
               <li>Terms And Conditions</li>
             </Link>
             <div className="buttons-for-signup">
             <NavLink to="/sign-up">
-              <button className="btn" aria-label="sign up">
+              <button className="btn" aria-label="sign up" onClick={none}>
                 Sign Up
               </button>
             </NavLink>
             <NavLink to="login">
-              <button className="btn" aria-label="login">
+              <button className="btn" aria-label="login" onClick={none}>
                 Login
               </button>
             </NavLink>
