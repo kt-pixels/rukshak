@@ -62,7 +62,7 @@
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.369);
 }
 
-.boxes.right > .btn {
+.boxes.right > a > .btn {
   border: none;
   padding: 10px 20px;
   font-size: 18px;

@@ -118,10 +118,20 @@ function Admission() {
             <label htmlFor="course">Select Course:</label>
             <select id="course" name="course" required>
               <option value="">Select</option>
-              <option value="B.Tech">B.Tech</option>
-              <option value="MBA">MBA</option>
-              <option value="B.Arch">B.Arch</option>
-              {/* <!-- Add more options as needed --> */}
+              <option value="BA">Bachelor of Arts (BA)</option>
+              <option value="BSc">Bachelor of Science (BSc)</option>
+              <option value="BCom">Bachelor of Commerce (BCom)</option>
+              <option value="BE">Bachelor of Engineering (BE)</option>
+              <option value="B.Tech">Bachelor of Technology (B.Tech)</option>
+              <option value="BBA">
+                Bachelor of Business Administration (BBA)
+              </option>
+              <option value="BCS">Bachelor of Computer Science (BCS)</option>
+              <option value="MBBS">
+                Bachelor of Medicine and Bachelor of Surgery (MBBS)
+              </option>
+              <option value="BFA">Bachelor of Fine Arts (BFA)</option>
+              <option value="LLB">Bachelor of Laws (LLB)</option>
             </select>
           </div>
 

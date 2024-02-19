@@ -1,5 +1,6 @@
 import React from "react";
 import "./About.css";
+import { Link } from "react-router-dom";
 
 function About() {
   return (
@@ -28,14 +29,23 @@ function About() {
             <div className="texts">
               <h3>Our Approach</h3>
               <p className="heading">
-              At Rakshak Institute, we believe in a student-centered approach to education. Our experienced faculty members are dedicated to understanding the unique strengths and needs of each student, fostering a supportive learning environment where every individual can thrive. We emphasize hands-on learning, creative expression, and real-world application of knowledge to ensure that our students are well-prepared for future challenges and opportunities.
+                At Rakshak Institute, we believe in a student-centered approach
+                to education. Our experienced faculty members are dedicated to
+                understanding the unique strengths and needs of each student,
+                fostering a supportive learning environment where every
+                individual can thrive. We emphasize hands-on learning, creative
+                expression, and real-world application of knowledge to ensure
+                that our students are well-prepared for future challenges and
+                opportunities.
               </p>
             </div>
           </div>
         </div>
         <div className="boxes right">
-            <div className="img"></div>
+          <div className="img"></div>
+          <Link to="/about-us">
             <button className="btn">Read More</button>
+          </Link>
         </div>
       </div>
     </div>

@@ -37,6 +37,20 @@
 
 }
 
+.log-sign{
+  display: flex;
+    gap: 20px;
+}
+
+.logout{
+  background-color: rgb(255, 234, 0);
+  border: 2px solid rgb(255, 221, 0);
+  outline: none;
+  padding: 10px;
+  color: black;
+  cursor: pointer;
+}
+
 .ctg-btn > button {
   background-color: transparent;
   border-radius: 10px;
@@ -89,6 +103,18 @@
 /* .navlinks > .swiper > .swiper-wrapper > .swiper-slide:nth-child(6) {
   width: 160px !important;
 } */
+
+.sign-up-btn > button{
+  background-color: rgb(255, 234, 0);
+  border: 2px solid rgb(255, 221, 0);
+  outline: none;
+  padding: 6px;
+  color: black;
+  cursor: pointer;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 18px;
+  border-radius: 10px;
+}
 
 @media only screen and (max-width: 1000px) {
   .sign-up {

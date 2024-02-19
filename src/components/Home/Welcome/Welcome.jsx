@@ -1,6 +1,6 @@
 import React from "react";
 import "./Welcome.css";
-
+import { Link } from "react-router-dom";
 
 function Welcome() {
   return (
@@ -16,63 +16,52 @@ function Welcome() {
         </p>
       </div>
 
-      {/* <div className="cards">
-        <Swiper
-        modules={[Pagination, Autoplay]}
-        slidesPerView={4}
-        pagination={{ clickable: true }}
-        autoplay={{delay: 3500}}
-        >
-          <SwiperSlide>
-            <div className="card">
-              <img src="/back/2.jpg" alt="" />
-              <h4>Admission</h4>
-              <div className="view">
-                <p className="btn">Take A View</p>
-                <span>
-                  <i className="fas fa-arrow-right"></i>
-                </span>
-              </div>
+      <div className="cards">
+        <Link to='/admission'>
+          <div className="card">
+            <h4>Admission</h4>
+            <div className="view">
+              <p className="btn">Take A View</p>
+              <span>
+                <i className="fas fa-arrow-right"></i>
+              </span>
             </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="card">
-              <img src="/back/2.jpg" alt="" />
-              <h4>Event</h4>
-              <div className="view">
-                <p className="btn">Take A View</p>
-                <span>
-                  <i className="fas fa-arrow-right"></i>
-                </span>
-              </div>
+          </div>
+        </Link>
+        <Link to='/ruakshak-trust-events'>
+          <div className="card">
+            <h4>Event</h4>
+            <div className="view">
+              <p className="btn">Take A View</p>
+              <span>
+                <i className="fas fa-arrow-right"></i>
+              </span>
             </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="card">
-              <img src="/back/2.jpg" alt="" />
-              <h4>Broucher</h4>
-              <div className="view">
-                <p className="btn">Take A View</p>
-                <span>
-                  <i className="fas fa-arrow-right"></i>
-                </span>
-              </div>
+          </div>
+        </Link>
+        <Link>
+          <div className="card">
+            <h4>Broucher</h4>
+            <div className="view">
+              <p className="btn">Take A View</p>
+              <span>
+                <i className="fas fa-arrow-right"></i>
+              </span>
             </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="card">
-              <img src="/back/2.jpg" alt="" />
-              <h4>Course</h4>
-              <div className="view">
-                <p className="btn">Take A View</p>
-                <span>
-                  <i className="fas fa-arrow-right"></i>
-                </span>
-              </div>
+          </div>
+        </Link>
+        <Link>
+          <div className="card">
+            <h4>Course</h4>
+            <div className="view">
+              <p className="btn">Take A View</p>
+              <span>
+                <i className="fas fa-arrow-right"></i>
+              </span>
             </div>
-          </SwiperSlide>
-        </Swiper>
-      </div> */}
+          </div>
+        </Link>
+      </div>
     </section>
   );
 }

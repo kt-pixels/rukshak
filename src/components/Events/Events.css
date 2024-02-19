@@ -1,0 +1,110 @@
+.event-container .background {
+    background-image: url("/public/1.jpg");
+    height: 600px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  
+  .event-container .background::before {
+    content: "";
+    height: 600px;
+    background-color: rgba(0, 0, 0, 0.543);
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+  .event-container .background > h2 {
+    color: white;
+    padding: 20px;
+    font-size: 40px;
+    backdrop-filter: blur(20px);
+    border: 2px solid yellow;
+    letter-spacing: 2px;
+  }
+  
+  .event-content-container {
+    padding: 30px;
+  }
+  
+  .event {
+    margin-block: 40px;
+  }
+  
+  .event > h3 {
+    color: orange;
+    font-size: 25px;
+    border-bottom: 1px solid rgb(215, 215, 215);
+  }
+
+  .event > p > strong {
+    color: rgb(0, 106, 151);
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .event-container .background::before {
+      height: 400px;
+    }
+  
+    .event-container .background {
+      height: 400px;
+      align-items: flex-end;
+      padding-block-end: 40px;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .event-container .background > h2 {
+      padding: 13px;
+      font-size: 35px;
+    }
+  
+    .event > h3 {
+      font-size: 20px;
+    }
+  
+    .event > p{
+      font-size: 14px;
+    }
+  }
+  
+  @media only screen and (max-width: 430px){
+      .event-container .background > h2 {
+          padding: 10px;
+          font-size: 30px;
+      }
+  
+      .event-container .background {
+          height: 350px;
+      }
+  
+      .event-container .background::before {
+          height: 350px;
+      }
+  }
+  
+  @media only screen and (max-width: 372px){
+      .event-container .background > h2 {
+          font-size: 26px;
+      }
+  
+      .event-container .background {
+          height: 300px;
+      }
+  
+      .event-container .background::before {
+          height: 300px;
+      }
+  }
+  
+  @media only screen and (max-width: 328px){
+      .event-container .background > h2 {
+          font-size: 20px;
+      }
+  }

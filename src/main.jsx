@@ -14,8 +14,10 @@ import {
   Donate,
   Events,
   Home,
+  Legal,
   Login,
   Privacy_Policy,
+  Private,
   Signup,
   Terms,
 } from "./components/index.js";
@@ -26,12 +28,15 @@ const router = createBrowserRouter(
     <Route>
       <Route path="" element={<App />}>
         <Route path="/" element={<Home />} />
-        <Route path="/about-us" element={<About />} />
-        <Route path="/admission" element={<Admission />} />
-        <Route path="/donate" element={<Donate />} />
-        <Route path="/privacy-policy" element={<Privacy_Policy />} />
-        <Route path="/terms-and-conditions" element={<Terms />} />
-        <Route path="/ruakshak-trust-events" element={<Events />} />
+        <Route element={<Private />}>
+          <Route path="/about-us" element={<About />} />
+          <Route path="/admission" element={<Admission />} />
+          <Route path="/donate" element={<Donate />} />
+          <Route path="/privacy-policy" element={<Privacy_Policy />} />
+          <Route path="/terms-and-conditions" element={<Terms />} />
+          <Route path="/ruakshak-trust-events" element={<Events />} />
+          <Route path="/legal-support" element={<Legal />} />
+        </Route>
         <Route path="/sign-up" element={<Signup />} />
         <Route path="/login" element={<Login />} />
       </Route>
