@@ -1,0 +1,8 @@
+.donationform-conatiner {
+  display: none;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: bisque;
+}

@@ -1,13 +1,17 @@
 import React from "react";
 import "./Welcome.css";
 import { Link } from "react-router-dom";
+import { useClick } from "../../Context/AllAPIs";
 
 function Welcome() {
+
+  const {font} = useClick()
+
   return (
     <section>
       <div className="welcome">
         <h2 className="welcome-heading">Welcome to Rakshak Institute</h2>
-        <p>
+        <p style={{fontSize: `${font}px`}}>
           At Rakshak Institute, we are dedicated to nurturing young minds and
           empowering them to reach their fullest potential. Established with a
           vision to provide quality education and holistic development, we

@@ -1,8 +1,10 @@
 import React from "react";
 import "./About.css";
 import { Link } from "react-router-dom";
+import { useClick } from "../../Context/AllAPIs";
 
 function About() {
+  const {font} = useClick()
   return (
     <div className="about-container">
       <div className="heading">
@@ -14,7 +16,7 @@ function About() {
             <img src="/back/2.jpg" alt="boxes image" />
             <div className="texts">
               <h3>Our Mission</h3>
-              <p className="heading">
+              <p className="heading"  style={{fontSize: `${font}px`}}>
                 Our mission at Rakshak Institute is to inspire a lifelong love
                 for learning, foster critical thinking skills, and instill
                 values of integrity, compassion, and resilience in our students.
@@ -28,7 +30,7 @@ function About() {
             <img src="/back/2.jpg" alt="boxes image" />
             <div className="texts">
               <h3>Our Approach</h3>
-              <p className="heading">
+              <p className="heading"  style={{fontSize: `${font}px`}}>
                 At Rakshak Institute, we believe in a student-centered approach
                 to education. Our experienced faculty members are dedicated to
                 understanding the unique strengths and needs of each student,

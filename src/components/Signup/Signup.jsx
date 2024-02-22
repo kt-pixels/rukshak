@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import "./Signup.css";
 import { Link, useNavigate } from "react-router-dom";
 
-import firebase from "../../firebaseConfig";
 
 function Signup() {
   const navigate = useNavigate();

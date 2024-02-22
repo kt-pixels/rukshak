@@ -1,13 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Home.css";
 import About from "../About/About";
 import Welcome from "../Welcome/Welcome";
 import Join from "../Join/Join";
 import Testimonials from "../Testimonials/Testimonials";
-import Signup from "../../Signup/Signup";
-import Login from "../../Login/Login";
+import DonationForm from "../DonationForm/DonationForm";
 
 function Home() {
+  const [display, setDisplay] = useState('none')
+
+  const openDoantionForm = () => {
+    if(display === 'none'){
+      setDisplay = 'flex'
+    }
+  }
+
   return (
     <section>
       <div className="background-image blackshade">
@@ -20,7 +27,7 @@ function Home() {
           </div>
           <div className="btn">
             <button>Become A Valunteer</button>
-            <button>Donate Now</button>
+            <button onClick={openDoantionForm}>Donate Now</button>
           </div>
         </div>
       </div>
@@ -28,6 +35,7 @@ function Home() {
       <About />
       <Join />
       <Testimonials />
+      <DonationForm />
       {/* <Signup/> */}
       {/* <Login /> */}
     </section>

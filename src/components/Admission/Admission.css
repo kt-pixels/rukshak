@@ -26,7 +26,7 @@
     align-items: center;
 }
 
-.form-heading{
+.add-form-heading{
     text-align: center;
     padding-block: 20px;
     color: orange;
@@ -83,6 +83,15 @@ form > .fields select{
     padding: 10px 5px;
     width: 200px;
     outline: none;
+}
+
+.admission-form > button{
+    padding: 10px;
+    margin-block: 10px;
+    background-color: yellow;
+    border: 1px solid orangered;
+    border-radius: 10px;
+    margin: 30px;
 }
 
 @media only screen and (max-width: 936px){
@@ -142,11 +151,11 @@ form > .fields select{
       }
   
       .admission-form .background {
-          height: 300px;
+          height: 250px;
       }
   
       .admission-form .background::before {
-          height: 300px;
+          height: 250px;
       }
 
       .submition-form > form{
@@ -176,7 +185,7 @@ form > .fields select{
         font-size: 17px;
     }
 
-    .form-heading{
+    .add-form-heading{
         font-size: 22px;
     }
     

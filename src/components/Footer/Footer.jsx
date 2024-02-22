@@ -1,5 +1,6 @@
 import React from "react";
 import "./Footer.css";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -8,22 +9,22 @@ function Footer() {
         <div className="contact">
           <h3>Contact Details</h3>
           <address>
-            <p><i className="fas fa-search-location"></i>&nbsp; &nbsp;Location</p><br />
-            <p><i className="fas fa-phone-alt"></i>&nbsp; &nbsp;Phone</p><br />
-            <p><i className="fas fa-mail-bulk"></i>&nbsp; &nbsp;Email</p><br />
+            <p><i className="fas fa-search-location"></i>&nbsp; &nbsp;<b>Location</b> : RAKSHAK TRUST FOR VISUALLY IMPAIRED<br />127, 2/3, Aditiya Properties, Chauhan Patti, Delhi - 110094</p><br />
+            <p><i className="fas fa-phone-alt"></i>&nbsp; &nbsp;<b>Email</b> : beingarakshak@gmail.com</p><br />
+            <p><i className="fas fa-mail-bulk"></i>&nbsp; &nbsp;<b>Phone no.</b> : 8448453264, 9968460381</p><br />
           </address>
         </div>
         <div className="pages">
           <h3>Pages</h3>
-          <p>Home</p>
-          <p>About Us</p>
-          <p>Events</p>
-          <p>Administration</p>
-          <p>Admission</p>
-          <p>Valunteer</p>
-          <p>Legal Support</p>
-          <p>Donate</p>
-          <p>Contact Us</p>
+          <Link to='/'><p>Home</p></Link>
+          <Link to='/about-us'><p>About Us</p></Link>
+          <Link to='/ruakshak-trust-events'><p>Events</p></Link>
+          <Link to='/dashboard'><p>Administration</p></Link>
+          <Link to='/admission'><p>Admission</p></Link>
+          <Link to='/legal-support'><p>Legal Support</p></Link>
+          <Link to='/donate'><p>Donate</p></Link>
+          <Link to='/privacy-policy'><p>Privacy Policy</p></Link>
+          <Link to='/terms-and-conditions'><p>Terms And Conditions</p></Link>
         </div>
         <div className="social-links">
           <h3>Links</h3>

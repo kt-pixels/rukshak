@@ -1,7 +1,9 @@
 import React from "react";
 import "./About.css";
+import {useClick} from '../Context/AllAPIs'
 
 function About() {
+  const {font} = useClick()
   return (
     <div className="about-rakshak">
       <div className="background">
@@ -10,7 +12,7 @@ function About() {
       <div className="main-content-container">
         <div className="content">
           <h3>Welcome to Rakshak Institute</h3>
-          <p>
+          <p style={{fontSize: `${font}px`}}>
             At Rakshak Institute, we are dedicated to nurturing young minds and
             empowering them to reach their fullest potential. Established with a
             vision to provide quality education and holistic development, we
@@ -20,7 +22,7 @@ function About() {
         </div>
         <div className="content">
           <h3>Our Mission</h3>
-          <p>
+          <p style={{fontSize: `${font}px`}}>
             Our mission at Rakshak Institute is to inspire a lifelong love for
             learning, foster critical thinking skills, and instill values of
             integrity, compassion, and resilience in our students. We are
@@ -31,7 +33,7 @@ function About() {
         </div>
         <div className="content">
           <h3>Our Approach</h3>
-          <p>
+          <p style={{fontSize: `${font}px`}}>
             At Rakshak Institute, we believe in a student-centered approach to
             education. Our experienced faculty members are dedicated to
             understanding the unique strengths and needs of each student,
@@ -43,7 +45,7 @@ function About() {
         </div>
         <div className="content">
           <h3>Academic Excellence</h3>
-          <p>
+          <p style={{fontSize: `${font}px`}}>
             We uphold high standards of academic excellence and are committed to
             providing rigorous and engaging curriculum that promotes
             intellectual curiosity and academic achievement. Through
@@ -54,7 +56,7 @@ function About() {
         </div>
         <div className="content">
           <h3>Holistic Development</h3>
-          <p>
+          <p style={{fontSize: `${font}px`}}>
             At Rakshak Institute, we recognize the importance of nurturing not
             only the mind but also the heart and spirit. We offer a wide range
             of extracurricular activities, leadership opportunities, and
@@ -65,7 +67,7 @@ function About() {
         </div>
         <div className="content">
           <h3>Our Community</h3>
-          <p>
+          <p style={{fontSize: `${font}px`}}>
             Rakshak Institute is more than just a school; it is a vibrant and
             inclusive community where students, parents, teachers, and staff
             come together to learn, grow, and support one another. We foster

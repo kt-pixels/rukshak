@@ -104,11 +104,11 @@
   }
 
   .donate-rakshak .background {
-    height: 300px;
+    height: 250px;
   }
 
   .donate-rakshak .background::before {
-    height: 300px;
+    height: 250px;
   }
 }
 

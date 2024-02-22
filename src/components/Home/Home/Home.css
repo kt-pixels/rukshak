@@ -169,7 +169,7 @@
   }
 
   .text .heading > h2 {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
@@ -179,23 +179,24 @@
   }
 
   .background-image {
-    height: 380px;
+    height: 330px;
     align-items: flex-end;
+    margin-bottom: 40px;
 }
 
 .background-image::before {
-    height: 380px;
+    height: 330px;
 }
 }
 
 @media only screen and (max-width: 355px){
   .background-image {
-    height: 380px;
+    height: 300px;
     align-items: flex-end;
 }
 
 .background-image::before {
-    height: 380px;
+    height: 300px;
 }
 
 .text .heading > h2 {

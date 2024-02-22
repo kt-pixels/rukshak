@@ -91,11 +91,11 @@
     }
 
     .about-rakshak .background {
-        height: 300px;
+        height: 250px;
     }
 
     .about-rakshak .background::before {
-        height: 300px;
+        height: 250px;
     }
 }
 
